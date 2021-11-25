@@ -49,12 +49,33 @@ select{
     box-sizing: border-box;
 
     -webkit-appearance: none;
-    background-image: url('img/icon-dropdown.png');
+    background-image: url('img/icon-dropdown.svg');
     background-position: 190px 17px; 
     background-repeat: no-repeat; 
 
     font-weight: 400;
     font-style: normal;
+}
+
+.select-status {
+    background-color: var(--statuscolor);
+    color: var(--white);
+
+    -webkit-appearance: none;
+    background-image: url('img/icon-dropdown-white.svg');
+    background-position: 110px 12.5px; 
+    background-repeat: no-repeat; 
+
+    font-weight: 600;
+
+    border: 0;
+    border-radius: 5%;
+    padding: 6px 5px 6px 20px;
+
+    min-width: 135px;
+    max-width: 60%;
+
+    margin-bottom: 20px;
 }
 
 ul {
@@ -63,6 +84,11 @@ ul {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .separator {
@@ -471,6 +497,7 @@ progress::-webkit-progress-value {
 
 .hard-skills > label > span {
     font-size: 12px;
+    vertical-align: text-top;
 }
 
 .soft-skills > p {
@@ -491,6 +518,7 @@ progress::-webkit-progress-value {
 
 .soft-skills > label > span {
     font-size: 12px;
+    vertical-align: text-top;
 }
 
 .general-keywords > p {
@@ -510,6 +538,7 @@ progress::-webkit-progress-value {
 
 .general-keywords > label > span {
     font-size: 12px;
+    vertical-align: text-top;
 }
 
 .delete-skill-button {
@@ -524,6 +553,10 @@ progress::-webkit-progress-value {
     display: inline-flex;
     align-items: center; 
     justify-content: center;
+}
+
+.delete-skill-button:hover {
+    cursor: pointer;
 }
 
 .color-turq {
@@ -614,6 +647,10 @@ progress::-webkit-progress-value {
     border-radius: 3px;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+.attachment-item:hover{
+    cursor: pointer;
 }
 
 .attachment-item > img {
