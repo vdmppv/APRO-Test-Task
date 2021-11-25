@@ -171,10 +171,6 @@ a:hover {
     align-content: flex-start;
 }
 
-.header-info-name > a, button, h1 {
-    margin-right: 15px;
-}
-
 .header-info-text {
     margin-left: 15px;
     display: flex;
@@ -418,7 +414,6 @@ progress::-webkit-progress-value {
 .add-match-btn {
     margin-right: 20px;
 }
-
 
 .keyword-section{
     display: flex;
