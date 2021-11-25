@@ -700,6 +700,11 @@ progress::-webkit-progress-value {
     color: var(--turquoise);
 }
 
+.match-status-section > h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .match-status-section > p > span {
     font-style: normal;
     font-weight: 400;
