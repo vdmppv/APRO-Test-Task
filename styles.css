@@ -37,6 +37,26 @@ input {
     box-sizing: border-box;
 }
 
+select{
+    background-color: var(--inputboxbgcolor);
+    color: var(--maintextcolor);
+    border: 0;
+    border-radius: 3%;
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+    -webkit-appearance: none;
+    background-image: url('img/icon-dropdown.png');
+    background-position: 190px 17px; 
+    background-repeat: no-repeat; 
+
+    font-weight: 400;
+    font-style: normal;
+}
+
 ul {
     list-style: none;  
 }
@@ -219,7 +239,7 @@ a:hover {
     margin-right: 10px;
 }
 
-.input-column > p {
+.input-column > a {
     color: var(--turquoise);
     text-decoration: underline;
 }
