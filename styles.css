@@ -147,6 +147,11 @@ button:hover {
     font-weight: 400;
 }
 
+.navigation li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .profile-img {
     border-radius: 50%;
     width: 35px;
