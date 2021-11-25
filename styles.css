@@ -165,6 +165,16 @@ a:hover {
     display: flex;
 }
 
+.header-info-name {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.header-info-name > a, button, h1 {
+    margin-right: 5px;
+}
+
 .header-info-text {
     margin-left: 15px;
     display: flex;
@@ -347,10 +357,16 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-.slider-flex > li {
-    margin-right: 25px;
+.slider-flex-item {
+    margin-right: 20px;
     margin-top: 10px;
-    justify-content: space-between;
+
+    display: inline-flex;
+    align-items: center;
+}
+
+.slider-flex-item > p {
+    margin-left: 10px;
 }
 
 .progress-dates {

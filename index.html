@@ -32,9 +32,11 @@
                     <img src="img/player_img.jpg" class="player-img" />
 
                     <div class="header-info-text">
+                        <div class="header-info-name">
                             <h1>Eden Hazard</h1>
                             <button class="button-info">senior</strong></button>
                             <a><img src="img/icon-pen.png"></a>
+                        </div>
                         <ul class="header-info-status">
                             <button class="button-status">Status: Hired</button>
                             <li>ID:<span> 10 </span></li>
@@ -109,28 +111,29 @@
                 </div>
                 <div class="gdpr-info">
                     <p>GDPR</p>
-                    <ul class="slider-flex">
-                        <li>
+                    <div class="slider-flex">
+                        <div class = "slider-flex-item">
                             <label class="switch">
                                 <input type="checkbox">
                                 <div class="slider round"></div>
                             </label>
-                        </li>
-                        <li><p>Only public info</p></li>
-                        <li>
+                            <p>Only public info</p>
+                        </div>
+                        <div class = "slider-flex-item">
                             <label class="switch">
                                 <input type="checkbox">
                                 <div class="slider round"></div>
-                            </label></li>
-                        <li><p>Needs to be signed</p></li>
-                        <li>
+                            </label>
+                            <p>Needs to be signed</p>
+                        </div>
+                        <div class = "slider-flex-item">
                             <label class="switch">
                                 <input type="checkbox" checked>
                                 <div class="slider round"></div>
-                        </label>
-                        </li>
-                        <li><p>GDPR signed</p></li>
-                    </ul>
+                            </label>
+                            <p>GDPR signed</p>
+                        </div>
+                    </div>
                     
                     <progress id="file" max="100" value="30" class="progress-bar"></progress>
                     <div class="progress-dates">
