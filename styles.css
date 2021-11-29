@@ -50,7 +50,7 @@ select{
 
     -webkit-appearance: none;
     background-image: url('img/icon-dropdown.svg');
-    background-position: 190px 17px; 
+    background-position: 170px 17px; 
     background-repeat: no-repeat; 
 
     font-weight: 400;
@@ -66,14 +66,14 @@ select{
     background-position: 110px 12.5px; 
     background-repeat: no-repeat; 
 
-    font-weight: 600;
     font-size: 14px;
+    font-style: normal;
 
     border: 0;
     border-radius: 5%;
     padding: 6px 5px 6px 20px;
 
-    min-width: 135px;
+    width: 135px;
     max-width: 60%;
 
     margin-bottom: 20px;
@@ -200,12 +200,11 @@ button:hover {
 .header-info-name {
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
+    align-items: center;
 }
 
 .header-info-text {
     margin-left: 15px;
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -237,9 +236,8 @@ button:hover {
     border: 2px solid var(--turquoise);
     color: var(--turquoise);
     background-color: var(--white);
-    padding-left: 18px;
-    padding-right: 18px;
-    border-radius: 10%;
+    padding: 1px 18px;
+    border-radius: 5px;
 
     font-size: 14px;
 }
@@ -311,7 +309,7 @@ button:hover {
 .calendar {
     background-color: var(--inputboxbgcolor);
     background-image: url('img/icon_calendar.png');
-    background-position: 190px 10px; 
+    background-position: 170px 10px; 
     background-repeat: no-repeat;  
 }
 
@@ -328,8 +326,8 @@ button:hover {
 .switch {
     position: relative;
     display: inline-block;
-    width: 51px;
-    height: 31px;
+    min-width: 51px;
+    min-height: 31px;
   }
   
 .switch input { 
@@ -353,8 +351,8 @@ button:hover {
 .slider:before {
     position: absolute;
     content: "";
-    height: 23px;
-    width: 23px;
+    min-height: 23px;
+    min-width: 23px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -363,11 +361,11 @@ button:hover {
 }
   
 input:checked + .slider {
-    background-color: var(--switchcolor);
+    background-color: var(--green);
 }
   
 input:focus + .slider {
-    box-shadow: 0 0 1px var(--switchcolor);
+    box-shadow: 0 0 1px var(--green);
 }
   
 input:checked + .slider:before {
@@ -433,14 +431,14 @@ progress::-webkit-progress-bar {
 }
   
 progress::-webkit-progress-value {
-    background: var(--switchcolor);
+    background: var(--green);
     border-radius: 15px;
 }
 
 .dropdown {
     background-color: var(--inputboxbgcolor);
-    background-image: url('img/icon-dropdown.png');
-    background-position: 190px 17px; 
+    background-image: url('img/icon-dropdown.svg');
+    background-position: 170px 17px; 
     background-repeat: no-repeat; 
 }
 
@@ -451,6 +449,7 @@ progress::-webkit-progress-value {
     border-radius: 3px;
     border: none;
     font-size: 14px;
+    font-weight: normal;
 }
 
 .add-match-btn {
@@ -512,7 +511,7 @@ progress::-webkit-progress-value {
 }
 
 .hard-skills > label > span {
-    font-size: 12px;
+    font-size: 14px;
     vertical-align: text-top;
 }
 
@@ -533,7 +532,7 @@ progress::-webkit-progress-value {
 }
 
 .soft-skills > label > span {
-    font-size: 12px;
+    font-size: 14px;
     vertical-align: text-top;
 }
 
@@ -553,7 +552,7 @@ progress::-webkit-progress-value {
 }
 
 .general-keywords > label > span {
-    font-size: 12px;
+    font-size: 14px;
     vertical-align: text-top;
 }
 
@@ -592,6 +591,7 @@ progress::-webkit-progress-value {
 }
 
 .add-btns-section {
+    margin-top: 10px;
     display: flex;
 }
 
@@ -602,12 +602,13 @@ progress::-webkit-progress-value {
     border-radius: 3px;
     border: none;
     font-size: 14px;
+    font-weight: normal;
 }
 
 .general {
     background-color: var(--white);
     margin-top: 15px;
-    padding: 10px;
+    padding: 20px;
 
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.13);
     border-radius: 3px;
