@@ -501,7 +501,8 @@ progress::-webkit-progress-value {
 }
 
 .keyword-section > p {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 33px;
 }
 
 .keyword-section > a {
@@ -660,7 +661,7 @@ progress::-webkit-progress-value {
 }
 
 .note-field, .attachment-box {
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 3px;
     background-color: var(--inputboxbgcolor);
     padding: 20px;
@@ -727,11 +728,11 @@ progress::-webkit-progress-value {
 }
 
 .attachment-item > img {
-    margin-left: 5px;
+    margin-left: 7px;
 }
 
 .match-box {
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 3px;
     background-color: var(--white);
     padding: 20px;
@@ -742,7 +743,7 @@ progress::-webkit-progress-value {
 }
 
 .match-info-status {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .match-info-text {
@@ -750,7 +751,7 @@ progress::-webkit-progress-value {
 }
 
 .match-info-status > li {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .match-info-status > li > span {
