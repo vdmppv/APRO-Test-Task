@@ -19,22 +19,29 @@
     font-size: 16px;
     font-weight: 600;
 	font-style: normal;
+    letter-spacing: -0.44px;
+    line-height: 22px;
 }
 
 h1 {
     font-size: 24px;
+    line-height: 33px;
 }
 
 input {
     background-color: var(--inputboxbgcolor);
     color: var(--maintextcolor);
     border: 0;
-    border-radius: 3%;
+    border-radius: 3px;
 
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     box-sizing: border-box;
+}
+
+input::placeholder {
+    color: var(--maintextcolor);
 }
 
 select{
@@ -68,7 +75,9 @@ select{
 
     font-size: 14px;
     font-style: normal;
-
+    font-weight: 600;
+    line-height: 19px;
+    margin-top: 0;
     border: 0;
     border-radius: 5%;
     padding: 6px 5px 6px 20px;
@@ -76,7 +85,7 @@ select{
     width: 135px;
     max-width: 60%;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -94,6 +103,12 @@ button:hover {
 
 .separator {
     border-bottom: 1px solid var(--switchcolor-false);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.separator > h1 {
+    margin-bottom: 20px;
 }
 
 .wrapper {
@@ -181,11 +196,13 @@ button:hover {
 }
 
 .first-col-menu-bar a{
-    margin-right: 5px; 
+    margin-right: 5px;
+    line-height: 20px; 
 }
 
 .first-col-menu-bar-right a {
     margin-left: 25px;
+    line-height: 20px;
 }
 
 .actions-link {
@@ -217,7 +234,11 @@ button:hover {
 }
 
 .header-info-status {
-    margin-top: 8px;
+    margin-top: 10px;
+}
+
+.header-info-status > li {
+    line-height: 22px;
 }
 
 .header-info-status > li > span {
@@ -239,6 +260,8 @@ button:hover {
     padding: 1px 18px;
     border-radius: 5px;
 
+    margin-right: 10px;
+
     font-size: 14px;
 }
 
@@ -254,7 +277,6 @@ button:hover {
 
 .main-info {
     padding-top: 10px;
-    border-bottom: 1px solid var(--switchcolor-false);
 }
 
 .main-info form {
@@ -265,10 +287,10 @@ button:hover {
     border: 0;
     border-radius: 3px;
     background-color: var(--turquoise);
-    width: 60px;
-    height: 40px;
-    margin-top: 9px;
-    margin-left: 10px;
+    width: 69px;
+    height: 41.7px;
+    margin-left: 15px;
+
 }
 
 .input-column {
@@ -277,9 +299,20 @@ button:hover {
     padding: 0px;
 }
 
-.input-margin-right {
-    margin-right: 10px;
+.input-margin-bottom {
+    margin-bottom: 20px;
+}
 
+.input-margin-right {
+    margin-right: 15px;
+}
+
+.margin-minusbottom {
+    margin-top: -10px;
+}
+
+.input-column > label {
+    line-height: 22px;
 }
 
 .input-column > a {
@@ -289,6 +322,7 @@ button:hover {
 
 .input-column > a > p {
     font-size: 14px;
+    line-height: 19px;
 }
 
 .input-column > input {
@@ -298,6 +332,7 @@ button:hover {
 
 .input-w-btn {
     display: flex;
+    align-items: center;
 }
 
 .input-w-btn > input {
@@ -314,13 +349,12 @@ button:hover {
 }
 
 .gdpr-info {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .gdpr-info > p {
     font-style: normal;
     font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .switch {
@@ -389,6 +423,7 @@ input:checked + .slider:before {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 20px;
 }
 
 .slider-flex-item {
@@ -401,7 +436,8 @@ input:checked + .slider:before {
 }
 
 .slider-flex-item > p {
-    margin-left: 10px;
+    margin-left: 15px;
+    line-height: 22px;
 }
 
 .progress-dates {
@@ -450,15 +486,18 @@ progress::-webkit-progress-value {
     border: none;
     font-size: 14px;
     font-weight: normal;
+    line-height: 19px;
 }
 
 .add-match-btn {
     margin-right: 20px;
+    line-height: 19px;
 }
 
 .keyword-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .keyword-section > p {
@@ -483,6 +522,8 @@ progress::-webkit-progress-value {
     background-position: 10px 13px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 
 
@@ -496,7 +537,7 @@ progress::-webkit-progress-value {
 
 .hard-skills > p {
     color: var(--turquoise);
-    margin-bottom: 10px;
+    line-height: 22px;
 }
 
 .hard-skills > label {
@@ -505,7 +546,7 @@ progress::-webkit-progress-value {
     border-radius: 5px;
     border: none;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 1px 5px 1px 7px;
     display: inline-block;
 }
@@ -513,11 +554,12 @@ progress::-webkit-progress-value {
 .hard-skills > label > span {
     font-size: 14px;
     vertical-align: text-top;
+    line-height: 19px;
 }
 
 .soft-skills > p {
     color: var(--green);
-    margin-bottom: 10px;
+    line-height: 22px;
 }
 
 .soft-skills > label {
@@ -526,7 +568,7 @@ progress::-webkit-progress-value {
     border-radius: 5px;
     border: none;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 1px 5px 1px 7px;
     display: inline-block;
 }
@@ -534,10 +576,11 @@ progress::-webkit-progress-value {
 .soft-skills > label > span {
     font-size: 14px;
     vertical-align: text-top;
+    line-height: 19px;
 }
 
 .general-keywords > p {
-    margin-bottom: 10px;
+    line-height: 22px;
 }
 
 .general-keywords > label {
@@ -546,7 +589,7 @@ progress::-webkit-progress-value {
     border-radius: 5px;
     border: none;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 1px 5px 1px 7px;
     display: inline-block;
 }
@@ -554,6 +597,7 @@ progress::-webkit-progress-value {
 .general-keywords > label > span {
     font-size: 14px;
     vertical-align: text-top;
+    line-height: 19px;
 }
 
 .delete-skill-button {
@@ -603,6 +647,7 @@ progress::-webkit-progress-value {
     border: none;
     font-size: 14px;
     font-weight: normal;
+    line-height: 19px;
 }
 
 .general {
@@ -652,8 +697,8 @@ progress::-webkit-progress-value {
 
 .note-field-header-right > p {
     font-size: 14px;
+    line-height: 19px;
 }
-
 
 .attachment-list {
     margin-top: 5px;
@@ -674,6 +719,7 @@ progress::-webkit-progress-value {
 .attachment-item > span {
     font-weight: 500;
     font-style: normal;
+    line-height: 20px;
 }
 
 .attachment-item:hover{
