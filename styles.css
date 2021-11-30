@@ -35,8 +35,8 @@ input {
     border-radius: 3px;
 
     width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0;
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
     box-sizing: border-box;
 }
 
@@ -51,8 +51,8 @@ select{
     border-radius: 3%;
 
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
     box-sizing: border-box;
 
     -webkit-appearance: none;
@@ -303,11 +303,10 @@ button:hover {
 }
 
 .main-info {
-    padding-top: 10px;
 }
 
 .main-info form {
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 .button-main-info {
@@ -350,6 +349,7 @@ button:hover {
 .input-column > a > p {
     font-size: 14px;
     line-height: 19px;
+    padding-top: 10px;
 }
 
 .input-column > input {
@@ -359,7 +359,7 @@ button:hover {
 
 .input-w-btn {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .input-w-btn > input {
