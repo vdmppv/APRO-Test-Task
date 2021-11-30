@@ -115,6 +115,26 @@ button:hover {
     margin: 0 0 3px 0;
 }
 
+.columns-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px;
+}
+
+.column-main {
+    flex: 1;
+    margin: 0px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    min-width: 600px;
+}
+
+.column-main:last-child {
+    background-color: var(--thirdclnbgcolor);
+    min-width: 720px;
+}
+
 .columns {
     display: flex;
     flex-flow: row wrap;
@@ -172,6 +192,13 @@ button:hover {
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    background-size: contain;
+}
+
+.profile-img-match {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
     background-size: contain;
 }
 
@@ -249,8 +276,8 @@ button:hover {
 
 .player-img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 117px;
+    height: 117px;
 }
 
 .button-info {
@@ -261,7 +288,7 @@ button:hover {
     border-radius: 5px;
 
     margin-right: 10px;
-
+    line-height: 19px;
     font-size: 14px;
 }
 
@@ -653,7 +680,7 @@ progress::-webkit-progress-value {
 
 .general {
     background-color: var(--white);
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 20px;
 
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.13);
@@ -740,10 +767,11 @@ progress::-webkit-progress-value {
 
 .match-info {
     display: flex;
+    margin-top: 10px;
 }
 
 .match-info-status {
-    margin-bottom: 10px;
+    
 }
 
 .match-info-text {
@@ -751,7 +779,7 @@ progress::-webkit-progress-value {
 }
 
 .match-info-status > li {
-    padding-top: 10px;
+    padding: 5px 0px;
 }
 
 .match-info-status > li > span {
@@ -763,6 +791,8 @@ progress::-webkit-progress-value {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-top: 5px;
+    padding-left: 35px;
 }
 
 .match-status-section > h4 {
