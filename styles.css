@@ -384,7 +384,7 @@ button:hover {
 .calendar {
     background-color: var(--inputboxbgcolor);
     background-image: url('img/icon_calendar.png');
-    background-position: 170px 10px; 
+    background-position: 90%;
     background-repeat: no-repeat;  
 }
 
