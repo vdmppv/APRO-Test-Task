@@ -57,7 +57,7 @@ select{
 
     -webkit-appearance: none;
     background-image: url('img/icon-dropdown.svg');
-    background-position: 170px 17px; 
+    background-position: 88%;
     background-repeat: no-repeat; 
 
     font-weight: 400;
@@ -70,7 +70,7 @@ select{
 
     -webkit-appearance: none;
     background-image: url('img/icon-dropdown-white.svg');
-    background-position: 110px 12.5px; 
+    background-position: 85%;
     background-repeat: no-repeat; 
 
     font-size: 14px;
