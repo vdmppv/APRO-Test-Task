@@ -388,6 +388,10 @@ button:hover {
     background-repeat: no-repeat;  
 }
 
+.icon-button {
+    vertical-align: sub;
+}
+
 .gdpr-info {
     margin-top: 40px;
 }
