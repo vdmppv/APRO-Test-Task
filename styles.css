@@ -35,7 +35,7 @@ input {
     border-radius: 3px;
 
     width: 100%;
-    padding: 10px 20px;
+    padding: 13px 0px 13px 15px;
     margin: 10px 0 0 0;
     box-sizing: border-box;
 }
@@ -51,13 +51,13 @@ select{
     border-radius: 3%;
 
     width: 100%;
-    padding: 10px 20px;
+    padding: 13px 15px;
     margin: 10px 0 0 0;
     box-sizing: border-box;
 
     -webkit-appearance: none;
     background-image: url('img/icon-dropdown.svg');
-    background-position: 88%;
+    background-position: 93% 50%; 
     background-repeat: no-repeat; 
 
     font-weight: 400;
@@ -70,7 +70,7 @@ select{
 
     -webkit-appearance: none;
     background-image: url('img/icon-dropdown-white.svg');
-    background-position: 85%;
+    background-position: 85% 55%;
     background-repeat: no-repeat; 
 
     font-size: 14px;
@@ -294,10 +294,10 @@ button:hover {
 }
 
 .button-info {
-    border: 2px solid var(--turquoise);
+    border: 1px solid var(--turquoise);
     color: var(--turquoise);
     background-color: var(--white);
-    padding: 1px 18px;
+    padding: 0px 18px;
     border-radius: 5px;
 
     margin-right: 10px;
@@ -327,7 +327,7 @@ button:hover {
     border-radius: 3px;
     background-color: var(--turquoise);
     width: 69px;
-    height: 41.7px;
+    height: 48px;
     margin-left: 15px;
 
 }
@@ -379,6 +379,7 @@ button:hover {
     width: 100%;
     font-weight: 400;
     font-style: normal;
+    max-width: 84%;
 }
 
 .calendar {
@@ -704,7 +705,14 @@ progress::-webkit-progress-value {
     border-radius: 3px;
 }
 
-.note-field, .attachment-box {
+.attachment-box {
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: var(--inputboxbgcolor);
+    padding: 25px 20px 15px 20px;
+}
+
+.note-field{
     margin-top: 20px;
     border-radius: 3px;
     background-color: var(--inputboxbgcolor);
@@ -746,11 +754,11 @@ progress::-webkit-progress-value {
 }
 
 .attachment-list {
-    margin-top: 5px;
+    
 }
 
 .attachment-item {
-    padding: 5px 35px;
+    padding: 3px 35px;
     border: 1px solid var(--turquoise);
     color: var(--maintextcolor);
     text-decoration: underline;
@@ -759,12 +767,12 @@ progress::-webkit-progress-value {
     border-radius: 3px;
     margin-top: 10px;
     margin-right: 10px;
+    line-height: 20px;
 }
 
 .attachment-item > span {
     font-weight: 500;
     font-style: normal;
-    line-height: 20px;
 }
 
 .attachment-item:hover{
