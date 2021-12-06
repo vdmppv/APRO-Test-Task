@@ -9,6 +9,7 @@
     --statuscolor: #EC3D5B;
     --switchcolor: #34C759;
     --switchcolor-false: rgba(120, 120, 128, 0.16);
+    --progress-bar: #D3DBE6;
 }
 
 * {
@@ -494,26 +495,21 @@ input:checked + .slider:before {
 progress {
     border: none;
     width: 100%;
-    height: 20px;
+    height: 11px;
     background: var(--inputboxbgcolor);
-    margin-top: 10px;
 }
-  
-progress {
-    color: lightblue;
-}
-  
-progress::-moz-progress-bar {
-    background: lightcolor;
-}
-  
+
 progress::-webkit-progress-bar {
-    background: var(--inputboxbgcolor);
+    background: var(--progress-bar);
+    border-radius: 10px;
 }
-  
+
 progress::-webkit-progress-value {
-    background: var(--green);
-    border-radius: 15px;
+    background-color: var(--green);
+    border-radius: 10px;
+}
+progress::-moz-progress-bar {
+
 }
 
 .dropdown {
